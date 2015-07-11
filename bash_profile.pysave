@@ -1,0 +1,13 @@
+export PS1="aditya->"
+
+alias ll="ls -lahG"
+
+GRADLE_HOME=/Users/addiittya/Develop/gradle-2.2.1
+
+export GRADLE_HOME
+
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH:$GRADLE_HOME/bin:/Applications/XAMPP/xamppfiles/bin"
+
+export DYLD_LIBRARY_PATH=/Applications/XAMPP/xamppfiles/lib:$DYLD_LIBRARY_PATH
+
+eval "$(rbenv init -)"

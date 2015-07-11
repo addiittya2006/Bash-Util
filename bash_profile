@@ -1,0 +1,82 @@
+export PS1="bash$"
+# export PS1="aditya@\w$"
+
+alias ll="ls -lahG"
+
+export EDITOR=atom
+
+export HOMEBREW_EDITOR=subl
+
+# export PATH="/Applications/XAMPP/xamppfiles/bin:$PATH"
+
+export CLASSPATH=/Users/addiittya/Develop/mysql-connector-java-5.1.34/mysql-connector-java-5.1.34-bin.jar:/usr/local/apache-tomcat-8.0.23/lib/servlet-api.jar:$CLASSPATH
+
+export ECLIPSE_HOME=/Users/addiittya/Develop/Eclipse\ WS/eclipse.ini
+
+GRADLE_HOME=/Users/addiittya/Develop/gradle-2.2.1
+
+export GRADLE_HOME
+
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+export PATH="/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/Users/addiittya/Develop/Android:/Applications/Xcode.app/Contents/Developer/usr/bin:$PATH:$GRADLE_HOME/bin:/Users/addiittya/Develop/perlbrew/bin:/Applications/XAMPP/xamppfiles/bin:/Users/addiittya/Develop/jruby-9.0.0.0.pre2/bin"
+
+export STUDIO_JDK=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk:$STUDIO_JDK
+
+eval "$(rbenv init -)"
+
+# Setting PATH for Python 3.4
+# The orginal version is saved in .bash_profile.pysave
+# PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+# export PATH
+
+if [ -f ~/.git-completion.bash ]; then
+	source ~/.git-completion.bash
+fi
+
+source virtualenvwrapper.sh
+
+# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
+export COCOS_CONSOLE_ROOT=/Users/addiittya/Develop/cocos2d-x-3.3/tools/cocos2d-console/bin
+export PATH=$COCOS_CONSOLE_ROOT:$PATH
+
+# Add environment variable COCOS_X_ROOT for cocos2d-x
+export COCOS_X_ROOT=/Users/addiittya/Develop/cocos2d-x-3.3
+export PATH=$COCOS_X_ROOT:$PATH
+
+# Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
+export COCOS_TEMPLATES_ROOT=/Users/addiittya/Develop/cocos2d-x-3.3/templates
+export PATH=$COCOS_TEMPLATES_ROOT:$PATH
+
+# Add environment variable NDK_ROOT for cocos2d-x
+export NDK_ROOT=/Users/addiittya/Develop/NDK/android-ndk-r10d
+export PATH=$NDK_ROOT:$PATH
+
+# Add environment variable ANDROID_SDK_ROOT for cocos2d-x
+export ANDROID_SDK_ROOT=/Users/addiittya/Library/Android/sdk
+export PATH=$ANDROID_SDK_ROOT:$PATH
+export PATH=$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools:$PATH
+
+# Add environment variable ANT_ROOT for cocos2d-x
+export ANT_ROOT=/Users/addiittya/Develop/apache-ant-1.9.4/bin
+export PATH=$ANT_ROOT:$PATH
+
+export ANT_HOME=/Users/addiittya/Develop/apache-ant-1.9.4/bin
+export PATH=$ANT_HOME:$PATH
+
+##
+# Your previous /Users/addiittya/.bash_profile file was backed up as /Users/addiittya/.bash_profile.macports-saved_2015-02-11_at_02:37:55
+##
+
+# MacPorts Installer addition on 2015-02-11_at_02:37:55: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/addiittya/Develop/google-cloud-sdk/path.bash.inc'
+
+# The next line enables bash completion for gcloud.
+source '/Users/addiittya/Develop/google-cloud-sdk/completion.bash.inc'
+
+export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages
