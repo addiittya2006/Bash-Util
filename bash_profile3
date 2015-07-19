@@ -7,21 +7,40 @@ export EDITOR=atom
 
 export HOMEBREW_EDITOR=subl
 
-# export PATH="/Applications/XAMPP/xamppfiles/bin:$PATH"
+export PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/local/bin:/opt/local/sbin:$PATH
 
-export CLASSPATH=/Users/addiittya/Develop/mysql-connector-java-5.1.34/mysql-connector-java-5.1.34-bin.jar:/usr/local/apache-tomcat-8.0.23/lib/servlet-api.jar:$CLASSPATH
+#Add the Xcode Command line tools to PATH
+export PATH=$PATH:/Applications/Xcode.app/Contents/Developer/usr/bin
 
+#Add the Servlet API Jar to the CLASSPATH to run Servlets from Terminal
+export CLASSPATH=/usr/local/apache-tomcat-8.0.23/lib/servlet-api.jar:$CLASSPATH
+
+#Add MySQL Connector/J to the CLASSPATH
+export CLASSPATH=/Users/addiittya/Develop/mysql-connector-java-5.1.34/mysql-connector-java-5.1.34-bin.jar:$CLASSPATH
+
+#Add Custom Eclipse Configuration
 export ECLIPSE_HOME=/Users/addiittya/Develop/Eclipse\ WS/eclipse.ini
 
-GRADLE_HOME=/Users/addiittya/Develop/gradle-2.2.1
+#Add Gradle environment Variable for Android Studio
+export GRADLE_HOME=/Users/addiittya/Develop/gradle-2.2.1
+export PATH=$PATH:$GRADLE_HOME/bin
 
-export GRADLE_HOME
-
+#export java home
 export JAVA_HOME=$(/usr/libexec/java_home)
 
-export PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/Users/addiittya/Develop/Android:/Applications/Xcode.app/Contents/Developer/usr/bin:$PATH:$GRADLE_HOME/bin:/Users/addiittya/Develop/perlbrew/bin:/Applications/XAMPP/xamppfiles/bin:/Users/addiittya/Develop/jruby-9.0.0.0.pre2/bin
-
 export STUDIO_JDK=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk:$STUDIO_JDK
+
+#Add environment variable adb and fastboot for Android
+export ADB_ROOT=/Users/addiittya/Develop/Android
+export PATH=$PATH:$ADB_ROOT
+
+#Add JRuby to the PATH
+export JRUBY_ROOT=/Users/addiittya/Develop/jruby-9.0.0.0.pre2/bin
+export PATH=$PATH:$JRUBY_ROOT
+
+#Add xampp environment to the PATH
+export XAMPP_ENV_ROOT=/Applications/XAMPP/xamppfiles/bin
+export PATH=$PATH:$XAMPP_ENV_ROOT
 
 eval "$(rbenv init -)"
 
@@ -64,19 +83,10 @@ export PATH=$ANT_ROOT:$PATH
 export ANT_HOME=/Users/addiittya/Develop/apache-ant-1.9.4/bin
 export PATH=$ANT_HOME:$PATH
 
-##
-# Your previous /Users/addiittya/.bash_profile file was backed up as /Users/addiittya/.bash_profile.macports-saved_2015-02-11_at_02:37:55
-##
-
-# MacPorts Installer addition on 2015-02-11_at_02:37:55: adding an appropriate PATH variable for use with MacPorts.
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-# Finished adapting your PATH environment variable for use with MacPorts.
-
-
 # The next line updates PATH for the Google Cloud SDK.
 source '/Users/addiittya/Develop/google-cloud-sdk/path.bash.inc'
 
 # The next line enables bash completion for gcloud.
 source '/Users/addiittya/Develop/google-cloud-sdk/completion.bash.inc'
 
-export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages
+# export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages
