@@ -1,0 +1,46 @@
+export PS1="$ "
+
+export EDITOR=mate
+
+export PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/local/bin:/opt/local/sbin:$PATH
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home
+
+# Add the Servlet API Jar to the CLASSPATH to compile Servlets from Terminal
+export CLASSPATH=/usr/local/apache-tomcat-8.0.23/lib/servlet-api.jar:$CLASSPATH
+
+# Add MySQL Connector/J to the CLASSPATH
+export CLASSPATH=/Users/addiittya/Documents/Develop/mysql-connector-java-5.1.34/mysql-connector-java-5.1.34-bin.jar:$CLASSPATH
+
+#Add Gradle environment Variable for Android Studio
+export GRADLE_HOME=/Users/addiittya/Documents/Develop/gradle-2.2.1
+export PATH=$PATH:$GRADLE_HOME/bin
+
+# Add environment variable adb and fastboot for Android
+export ADB_ROOT=/Users/addiittya/Documents/Develop/Android
+export PATH=$PATH:$ADB_ROOT
+
+#Add Go Env Variable
+export GOPATH=/Users/addiittya/Documents/Develop/go
+
+if [ -f ~/.bashrc ]; then
+	source ~/.bashrc
+fi
+
+# Uncomment :: Django Development
+# export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages
+# export PYTHONPATH=/usr/local/Cellar/python3/3.4.3_2/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages:$PYTHONPATH
+
+# export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+
+# source virtualenvwrapper.sh
+
+alias orproxy="ssh -D 12345 -i ~/.ssh/kp-ergo-proxy.pem ubuntu@54.148.123.130"
+
+alias siproxy="ssh -D 12345 -i ~/.ssh/kp-ec2-sing.pem ubuntu@fundsofhope.org"
+
+alias python3="DYLD_LIBRARY_PATH=/Applications/RubyStack/mysql/lib python3"
+
+alias cyblogin="python3 ~/Documents/Develop/PyCharmProjects/Py/pass/sleep.py"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
