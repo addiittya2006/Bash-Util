@@ -1,0 +1,9 @@
+alias python3="unset PYTHONPATH; DYLD_LIBRARY_PATH=/Applications/RubyStack/mysql/lib python3"
+
+alias python="DYLD_LIBRARY_PATH=/Applications/RubyStack/mysql/lib python"
+
+alias inlogin="python3 ~/Documents/exec/pass/sleep.py"
+
+alias ll="ls -lahG"
+
+alias edit="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -w"
