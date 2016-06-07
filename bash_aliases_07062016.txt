@@ -1,0 +1,20 @@
+alias python3="unset PYTHONPATH; DYLD_LIBRARY_PATH=/Users/addiittya/Developer/ruby/mysql/lib python3"
+
+# alias work="cd ~/Developer/Working"
+
+alias showall="defaults write com.apple.finder AppleShowAllFiles YES"
+
+alias hidden="defaults write com.apple.finder AppleShowAllFiles NO"
+
+alias python="DYLD_LIBRARY_PATH=/Users/addiittya/Developer/ruby/mysql/lib python"
+
+alias torb="/Users/addiittya/Developer/ruby/rubyconsole"
+
+alias tojs="/Users/addiittya/Developer/mean/use_meanstack"
+
+# alias inlogin="python3 ~/Documents/exec/pass/sleep.py &> /dev/null &"
+alias inlogin="unset PYTHONPATH; python3 ~/Developer/PyCharmProjects/exec/pass/sleep.py"
+
+alias ll="ls -lahG"
+
+alias edit="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -w"
